@@ -1,7 +1,7 @@
 window.onload=function(){
   var option = document.getElementById('range_value');
   var a = [];
-  for (var i = 1; i <= size.length; i++) {
+  for (var i = 3; i <= size.length; i++) {
     a[i] = new Option("單元"+i,i);
     option.options.add(a[i]);
   }
