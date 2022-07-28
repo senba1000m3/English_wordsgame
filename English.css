@@ -1,0 +1,123 @@
+*{
+  background-color: #e6e6fa;
+}
+
+.container-fluid{
+  margin-left: 30px;
+}
+
+.range{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.range .range{
+  visibility: hidden;
+}
+
+.range select{
+  width: 120px;
+}
+
+.range.active{
+  visibility: visible;
+}
+
+.range button{
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  height: 35px;
+  margin-left: 30px;
+}
+
+.mode{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mode button{
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  height: 35px;
+  margin-left: 30px;
+}
+
+.english{
+  visibility: hidden;
+}
+
+.english.active{
+  visibility: visible;
+}
+
+.english .title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.english .answer{
+  margin-top: 10px;
+  width: 200px;
+}
+
+.english .button{
+  display: flex;
+  justify-content: space-between;
+}
+
+.english .row button{
+  font-size: 20px;
+  font-weight: bold;
+  width: 70px;
+  margin-top: 30px;
+}
+
+.english .correct{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.explain .title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-right: 140px;
+  border-bottom: 3px solid #000;
+}
+
+.explain .text{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.explain{
+  visibility: hidden;
+}
+
+.explain.active{
+  visibility: visible;
+}
+
+.english .incorrect_explain{
+  font-size: 20px;
+  font-weight: bold;
+  width: 90%;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.english .incorrect_explain.active{
+  visibility: visible;
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<!--use by boostrape-->
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="utf-8"></meta>
+    <meta name="author", content="千羽Senba">
+    <title>英文高單</title>
+    <style type="text/css">
+    @import "English.css";
+    </style>
+    <script type="text/javascript" src="English.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <section class="range active">
+          <div class="col-12" align=left>
+            請選擇範圍：
+            <select name="range" id="range_value">
+              <!--<option value="1">單元1</option>-->
+            </select>
+          </div>
+        </section>
+        <section class="mode active">
+          <div class="col-12" align=left>
+            請選擇模式：
+            <select name="mode" id="mode_value">
+              <option value="repeat">重覆</option>
+              <option value="unrepeat">不重覆</option>
+            </select>
+            <button type="button" name="選擇難度" onclick="choose()">確定</button>
+          </div>
+        </section>
+        <section class="english active">
+          <div class="col-6 title" align=left>
+            題目：
+            <span name="題目" id="title"></span>
+          </div>
+          <div class="col-2" align=left>
+            <input class="answer" id="answer" placeholder="Enter Your Answer."></input>
+          </div>
+          <div class="row">
+            <div class="col-4 col-lg-2 button">
+              <button type="button" name="隨機出題" onclick="random()">跳過</button>
+              <button type="button" name="檢查答案" onclick="check()">提交</button>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2 correct" align=center>
+            <span name="正確or錯誤" id="correct" class="correct"></span>
+          </div>
+          <div class="col-4 col-lg-2" align=left>
+            <button name="錯誤解析" id="incorrect_explain" class="incorrect_explain" onclick=next()>看解析</button>
+          </div>
+        </section>
+        <section class="explain" id="explain">
+          <div class="col-4 title" align=left>
+            解析
+          </div>
+          <div class="row" align=left>
+            <div class="col-12 text" >
+              <span id="word">單字</span>
+            </div>
+            <div class="col-12 text" >
+              <span id="chinese">中文</span>
+            </div>
+            <div class="col-12 text">
+              例句：<br>
+              <span id="example">例句</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="text/javascript" src="English.js"></script>
+  </body>
+</html>
