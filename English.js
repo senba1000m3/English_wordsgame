@@ -14,7 +14,7 @@ var words; //單字
 var mode; //模式
 var counts; //計算題目出現數量
 var rp_detect = []; //偵測是否出現過
-var size = [0,0,51,48,42,47,44];
+var size = [0,0,51,48,42,47,44,46];
 
 function random(){
   reset();
@@ -347,5 +347,54 @@ words = [
             ["n.串、束、簇","cluster","名詞：串、束、簇\n動詞：群聚","There are clusters of grapes on the vine.\n藤上有一串串的葡萄。"],
             ["n.聯賽、循環賽、錦標賽","tournament","名詞：聯賽、循環賽、錦標賽","She won this amateur golf tournament.\n她赢得這次的業餘高爾夫錦標賽。"],
             ["n.資產","asset","名詞；資產","A sense of humor is a great asset in the entertainment business.\n在娛樂圈，幽默感是絕佳的本錢。"]
+          ],
+        //U8
+          [
+            ["n.新聞記者","journalist","名詞：新聞記者","He is a well-known journalist.\n他是位有名的新聞記者。"],
+            ["n.新聞學","journalism","名詞：新聞學","He has always wanted to major in journalism in college.\n他一直想在大學主修新聞。"],
+            ["v.嘲弄","mock","動詞：嘲弄\n形容詞：模擬的\n形容詞：假的\n名詞；模擬測驗","The naughty boy mocked (at) the crippled man.\n這頑皮的男孩嘲弄跛腳的男子。"],
+            ["n.意向、目的","intent","名詞：意向、目的\n形容詞：一心一意想要","She behaved foolishly but with good intent.\n她行為愚昧,但立意甚佳。"],
+            ["v.浸溼、泡","soak","動詞：浸溼、泡\n名詞：浸、泡","Soak the clothes in water for a few minutes before washing them.\n洗衣服前,先將衣服泡在水裡幾分鐘。"],
+            ["n.錫、罐頭","tin","名詞：錫\n名詞：罐頭、洋鐵罐\n動詞：將食物裝入罐中(英式)","She sealed meat in tin foil.\n她將肉封在錫箔紙裡。"],
+            ["n.代表、受委託者、v.派、委託~為代表","delegate","名詞：代表、受委託者\n動詞：派、委託~為代表","Around 350 delegates attended the summit meeting.\n大約三百五十位代表參加這次的高峰會談。"],
+            ["n.代表團","delegation","名詞：代表團\n名詞：委任、指派(權限等)","The Minister of Finance led the trade delegation to Tokyo.\n財政部長率領貿易代表團出訪東京。"],
+            ["v.修剪","trim","動詞：修剪\n動詞：刪減\n名詞：修剪\n形容詞：修剪整齊的","Peter uses a nail clipper to trim his fingernails.\n彼得用指甲刀修剪指甲。"],
+            ["n.大腿","thigh","名詞：大腿","I am losing weight, but my thighs are not getting slimmer.\n我的體重減輕了,大腿卻沒有變瘦。"],
+            ["adj.統計上的、統計學的","statistical","形容詞：統計上的、統計學的","This problem has become quite serious according to some statistical enidence.\n根據一些統計上的證據,這個問題已經變得相當嚴重。"],
+            ["adj.不熟悉的、n.外星人","alien","形容詞：不熟悉的\n形容詞：異國的\n名詞：外星人\n名詞：外國人","These customs are alien to us.\n這些習俗對我們而言相當陌生。"],
+            ["n.刻板印象(常用於錯誤的)","stereotype","名詞：刻板印象(常用於錯誤的)\n動詞：使定型","There are many sexual stereotypes in the society.\n社會上有許多性別方面的刻板印象。"],
+            ["n.分子","molecule","名詞：分子","Molecules are bigger than atoms.\n分子比原子大。"],
+            ["v.提名","nominate","動詞：提名\n動詞：任命","She was the first woman to be nominated for vice president.\n她是第一位被提名為副總統的女性。"],
+            ["n.提名","nomination","名詞；提名","Who will get the DPP nomination for president?\n誰會得到民進黨的總統提名?"],
+            ["n.被提名者","nominee","名詞：被提名者","Who are the nominees for Best Actor?\n最佳演員的提名者有哪些人呢?"],
+            ["n.框架、架構","framework","名詞：框架、架構\n名詞：體制、架構","This is a building with a steel framework.\n這是一棟鋼骨結構的大樓。"],
+            ["v.通知","notify","動詞：通知","The school will notify parents if their children are absent.\n如果小孩曠課,學校會通知家長。"],
+            ["adj.透明的","transparent","形容詞：透明的","He grows the bulbs in a transparent plastic box.\n他將球根種植在透明的塑膠盒裡,"],
+            ["n.疲倦、v.使疲倦","fatigue","名詞：疲倦\n動詞：使疲倦","She was suffering from fatigue.\n她為疲勞所苦。"],
+            ["n.局外人","outsider","名詞：局外人","I never know what goes on in the office. I feel like an outsider.\n我從不知道辦公室發生的事,像個局外人。"],
+            ["v.使~著迷","fascinate","動詞：使~著迷","Anything to do with airplanes and flying fascinates him.\n任何有關飛機和飛行的事都使他著迷而"],
+            ["adj.緊密的、緊湊的、n.小型車","compact","形容詞：緊密的、緊湊的\n形容詞：小巧玲瓏的\n動詞：使緊密結實\n名詞：小型車","She established a compact office in one corner of the living room.\n她在客廳角落設立一間迷你辦公室,"],
+            ["adj.青少年的","juvenile","形容詞：青少年的\n名詞：青少年","Juvenile delinquency is a worsening problem in big gn of cities.\n在大城市裡,青少年犯罪是個日益嚴重的問題。"],
+            ["adj.青少年時期的、青春期的","adolescent","形容詞：青少年時期的、青春期的\n名詞：青少年(十三到十七歲)","My adolescent son hardly ever talks at home.\n我那正值青春期的兒子在家幾乎都不說話。"],
+            ["n.麵團","dough","名詞：麵團、錢(俚語)","She kneaded the dough until it became smooth.\n她將麵糰揉到光滑為止。"],
+            ["n.投票選舉(尤指不記名、祕密的)","ballot","名詞：投票選舉(尤指不記名、祕密的)\n名詞：選票\n動詞：不記名投票","The party leader is elected by secret ballot.\n政黨領袖由不記名投票選出。"],
+            ["n.攤位","stall","名詞：攤位\n名詞：畜舍中的畜欄\n名詞：室內的小隔間\n動詞：藉故拖延\n動詞：(使)引擎熄火或車拋錨","The stalls are piled high with local vegetables.\n攤位上堆滿了當地的蔬菜。"],
+            ["n.肋骨","rib","名詞：肋骨\n動詞：(無惡意的)取笑、逗弄","My son broke a rib when he fell off a ladder.\n我兒子從梯子上掉下來,摔斷肋骨。"],
+            ["n.荒野、荒地","wilderness","名詞：荒野、荒地","The deserted garden is like a wilderness.\n這座廢棄花園像一片荒野。"],
+            ["n.野生動物(集合名詞)","wildlife","名詞：野生動物(集合名詞)","Scientists work hard to preserve endangered wildlife.\n科學家致力保存瀕臨絕種的野生動物。"],
+            ["adj.冷漠的、漠不關心的","indifferent","形容詞：冷漠的、漠不關心的","Most voters are indifferent to the election.\n大部分選民對選舉漠不關心。"],
+            ["n.出席","attendance","名詞：出席\n名詞：照顧","The teacher takes attendance to see who has come to class.\n老師點名確認有來上課的人,"],
+            ["v.廢止","abolish","動詞：廢止","I think the death penalty should be abolished.\n我認為應該廢除死刑。"],
+            ["n.議程","agenda","名詞：議程","The question of security is high on the agenda.\n安全問題會在議程中優先討論。"],
+            ["n.極大的痛苦","agony","名詞：極大的痛苦","I'm sympathetic with the agony of these patients.\n我同情這些病人承受的痛苦。"],
+            ["n.走道","aisle","名詞：走道","Would you like an aisle seat or a window seat?\n你想要靠走道或靠窗的位置呢?"],
+            ["n.過敏","allergy","名詞：過敏","She receives shots to treat her allergies.\n她打針治療過敏。"],
+            ["adj.過敏的","allergic","形容詞：過敏的","I am allergic to seafood.\n我對海鮮過敏。"],
+            ["v.交替(兩樣物品)、adj.交替的、輪流的","alternate","動詞：交替(兩樣物品)\n動詞：輪流(指兩人之間)\n形容詞：交替的、輪流的","She alternated between cheerfulness and deep despair.\n她時而高興,時而絕望。"],
+            ["n.骨董","antique","名詞：骨董\n形容詞：骨董的","The place is full of priceless antiques.\n這個地方充滿了無價的古董。"],
+            ["n.競技場","arena","名詞：競技場","Criminals were mostly killed in the arena in ancient Rome.\n古羅馬時期的罪犯大多死於競技場。"],
+            ["n.屁股","ass","名詞：屁股(俗俚用語，bottom較正式)\n名詞：傻蛋","I fell down on my ass.\n我一屁股跌在地上。"],
+            ["v.使震驚","astonish","動詞：使震驚","What astonishes me most is his complete lack of fear.\n最令我驚訝的是他的無所畏懼。"],
+            ["n.驚奇、錯愕","astonishment","名詞：驚奇、錯愕","We can't express our astonishment and anger in words.\n我們的震驚與憤怒無法以言語表達。"]
           ]
         ]
