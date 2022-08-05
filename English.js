@@ -14,7 +14,7 @@ var words; //單字
 var mode; //模式
 var counts; //計算題目出現數量
 var rp_detect = []; //偵測是否出現過
-var size = [0,0,51,48,42,47,44,46];
+var size = [0,0,51,48,42,47,44,46,42];
 
 function random(){
   reset();
