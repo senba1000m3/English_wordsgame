@@ -14,7 +14,7 @@ var words; //單字
 var mode; //模式
 var counts; //計算題目出現數量
 var rp_detect = []; //偵測是否出現過
-var size = [0,0,51,48,42,47,44,46,42];
+var size = [0,0,51,48,42,47,44,46,42,43];
 
 function random(){
   reset();
@@ -441,5 +441,51 @@ words = [
             ["n.大廈、巨宅、官邸","mansion","名詞：大廈、巨宅、官邸","The street is lined with enormous mansions where the rich and famous live.\n這條街上整排都是富豪名人居住的華廈。"],
             ["adj.汙穢的、難聞的","nasty","形容詞：汙穢的、難聞的\n形容詞：惡意的、惡劣的","There's a nasty smell in my refrigerator.\n我的冰箱裡有很難聞的臭味。"],
             ["n.參加者","participant","名詞：參加者","Every participant hopes to hit the jackpot.\n每位參加者都希望贏得大獎。"]
+          ],
+        //U10
+          [
+            ["n.悲觀主義","pessimism","名詞：悲觀主義","There is now a mood of deepening pessimism about the economy.\n經濟景況目前瀰漫一股悲觀的氛圍。"],
+            ["n.脈搏跳動","pulse","名詞：脈搏跳動\n動詞：(規律的)跳動、震動","She felt his wrist, checking for a pulse.\n她摸他的手腕,確認有無脈搏。"],
+            ["n.避難","refuge","名詞：避難\n名詞：避難所","During the bombardment, they took refuge in the cellar.\n空襲時,他們躲進地窖避難。"],
+            ["adj.敵對的、競爭的","rival","形容詞：敵對的、競爭的\n名詞：敵手、對手\n動詞：匹敵\n動詞：與~競爭","We defeated the rival team and our captain won the MVP award.\n我們擊敗對手,隊長還贏得最佳球員獎。"],
+            ["n.醜聞","scandal","名詞：醜聞","The president's reputation has been damaged by a sex scandal.\n總統的名要因一格性醜聞而受損。"],
+            ["v.播(種)","sow","動詞：播(種)","Farmers used to sow these fields with rice.\n=Farmers used to sow rice in these fields.\n農夫曾在這些土地上種稻。"],
+            ["n.迷信","superstition","名詞：迷信","According to American superstition, if you walk under a ladder, it brings you bad luck.\n根據美國人的迷信,若你行經梯子下方就會招來厄運。"],
+            ["v.處理","tackle","動詞：處理\n動詞：(曲棍球、足球中)阻攔、鏟球、(橄欖球中)擒抱(摔倒對方球員)","This country still has many problems to tackle.\n這個國家還有許多問題必須處理。"],
+            ["n.興奮、膽顫心驚","thrill","名詞：興奮、膽顫心驚\n動詞：使~興奮、感到刺激、毛骨悚然","The movie is full of thrills. It is very successful.\n這部電影令人膽顫心驚,非常成功。"],
+            ["n.驚悚的讀物、電影、戲劇等","thriller","名詞：驚悚的讀物、電影、戲劇等","This is a classic thriller. You'll love it.\n這是一部經典的驚悚片,你會喜歡的。"],
+            ["n.教學(尤指小學)","tuition","名詞：教學(尤指小學)\n名詞：學費","Private tuition by a tutor costs a lot.\n家教老師私下授課所費不貲。"],
+            ["v.在~下面劃線","underline","動詞：在~下面劃線\n名詞：底線","All the mistakes have been underlined in red ink.\n所有的錯誤都已用紅筆在下方劃線了。"],
+            ["n.簽證","visa","名詞：簽證","If you want to visit Russia, you have to get a visa first.\n若你想去俄羅斯,要先拿到簽證才行。"],
+            ["n.戰士","warrior","名詞：戰士","A true warrior values glory and honor above life.\n一名真正的戰士將榮耀與榮譽凌駕於生命之上。"],
+            ["n.下落、行蹤所在","whereabouts","名詞：下落、行蹤所在\n副詞：在哪裡、在何處","His present whereabouts is / are unknown.\n他目前下落不明。"],
+            ["n.假髮","wig","名詞：假髮","She wears a blonde wig to look more fashionable.\n她戴著一頂金色假髮使自己看起來比較時髦。"],
+            ["n.遊艇","yacht","名詞：遊艇\n動詞：架/乘遊艇","He owns a yacht and often uses it for cruising.\n他擁有一艘遊艇,並常駕駛它出遊。"],
+            ["n.模糊、模糊之物","blur","名詞：模糊、模糊之物\n動詞：(使)模糊","On hearing the accident, she rushed home in a blur of tears.\n聽到這個意外,她淚眼模糊地衝回家。"],
+            ["n.保鑣","bodyguard","名詞：保鑣","The president's bodyguards are armed.\n總統的貼身保鑣佩帶武器。"],
+            ["v.隨意瀏覽","browse","動詞：隨意瀏覽\n名詞：隨意觀看、瀏覽","I am browsing through old diaries. Should I throw them away?\n我正在瀏覽舊日記,這些日記該去嗎？"],
+            ["n.屠夫、肉販","butcher","名詞：屠夫、肉販\n動詞：屠宰、屠殺","Mr. Collins is a butcher, running a small meat shop.\n科林斯先生是名肉販,經營一家小肉舖。"],
+            ["n.嘉年華會","carnival","名詞：嘉年華會\n名詞：露天遊樂場","There is a carnival atmosphere in the streets.\n街上彌漫著嘉年華會的氣氛"],
+            ["n.主廚(特指餐廳或飯店的專業廚師)","chef","名詞：主廚(特指餐廳或飯店的專業廚師)","I hope to become a chef someday.\n我希望有朝一日成為主廚。"],
+            ["adj.體諒的","considerate","形容詞：體諒的","It was very considerate of you to reserve a seat for me.\n你真體貼,幫我留了一個位子。"],
+            ["adj.腐敗的","corrupt","形容詞：腐敗的\n動詞：(使)腐敗、腐化","The government was corrupt at that time.\n那時的政府很腐敗。"],
+            ["n.腐敗","corruption","名詞：腐敗","Political corruption is closely related to financial scandals.\n政治腐敗和金融醜聞間的關係密不可分。"],
+            ["n.民族主義者、美國民主黨員","democrat","名詞：民族主義者、美國民主黨員","The liberal Democrats all voted for the bill.\n開放派的美國民主黨黨員都投票贊成這項法案。"],
+            ["n.共和主義者、美國共和黨員","republican","名詞：共和主義者、美國共和黨員\n形容詞：共和(政體)的","All my family members are Republicans, not Democrats.\n我們全家人都是共和黨員,不是民主黨員。"],
+            ["n.否認","denial","名詞：否認\n名詞：拒絕","The government issued an official denial of the rumor.\n政府發出官方聲明否認這則謠言。"],
+            ["adj.描述的","descriptive","形容詞：描述的","The book contains many descriptive passages about nature.\n這本書有許多描述大自然的段落。"],
+            ["v.歧視","discriminate","動詞：歧視\n動詞：分辨、區分","Under federal law, it is illegal to discriminate against a minorities.\n依據聯邦法律,歧視少數民族是違法的。"],
+            ["n.歧視","discrimination","名詞：歧視\n名詞：辨別、區別","Many people still have sexual or racial discrimination.\n許多人仍有性別或種族歧視"],
+            ["adj.可怕的","dreadful","形容詞：可怕的","The weather is dreadful lately.\n最近天氣糟透了"],
+            ["n.誇大","exaggeration","名詞：誇大","It is an exaggeration to say that we are close friends.\n「我們是親密好友」的說法太誇張了。"],
+            ["n.過濾器","filter","名詞：過濾器\n動詞：過濾、濾出","We use a water filter to get pure water.\n我們用濾水器取得純淨的水。"],
+            ["n.喘氣、倒抽一口氣","gasp","名詞：喘氣、倒抽一口氣\n動詞：喘氣、倒抽一口氣","With a gasp of horror, Lewis jumped up and ran.\n路易斯驚懼地倒抽一口氣,跳起來拔腿就跑。"],
+            ["n.刺眼的強光","glare","名詞：刺眼的強光\n名詞：怒視\n動詞：發強光\n動詞：怒視","The glare of the sun on the snow blinded him.\n雪地上刺眼的陽光使他睜不開眼,"],
+            ["n.曲棍球","hockey","名詞：曲棍球","Hockey is one of his favorite sports.\n曲棍球是他最喜歡的運動之一。"],
+            ["n.嚎叫","howl","名詞：嚎叫\n動詞：(狗、狼)長嚎\n動詞：(人)吼叫、嚎哭(道)\n動詞：(風)怒號","The man let out a howl of despair.\n這名男子發出絕望的呼喊。"],
+            ["n.雷射","laser","名詞：雷射","She is going to have a laser surgery to remedy her with nearsightedness.\n她準備接受雷射手術矯正近視。"],
+            ["n.立法者、立法委員","lawmaker","名詞：立法者、立法委員","A lawmaker is responsible for making and changing laws.\n立法者負責制定及修改法律。"],
+            ["n.訴訟","lawsuit","名詞：訴訟","Knowing that they were very likely to lose, they paid one million to settle the lawsuit.\n他們知道敗訴的機率很大,於是支付一百萬達成和解。"],
+            ["n.按摩","massage","名詞：按摩\n動詞：按摩","Amassage can always refresh me.\n按摩總能使我神清氣爽。"]
           ]
         ]
